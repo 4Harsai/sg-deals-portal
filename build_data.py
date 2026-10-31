@@ -1,0 +1,113 @@
+import json
+C="check before use"
+D=[]
+def d(cat,brand,offer,code,valid,src,note=""):
+    D.append(dict(category=cat,brand=brand,offer=offer,code=code,valid=valid,source=src,note=note))
+F="Food delivery"
+d(F,"foodpanda","S$6 off selected restaurants, pick-up, pandamart & shops (min. spend varies)","LOBANG","29 Nov 2026","https://www.misslobang.com/article/foodpanda-6-off-lobang-code-nov-2026","Reported by MissLobang")
+d(F,"foodpanda (Visa)","S$8 off for Visa cards; limited vouchers drop daily 11am & 5pm; not stackable with LOBANG","VISA8OFF","29 Nov 2026","https://www.misslobang.com/article/foodpanda-6-off-lobang-code-nov-2026","Reported by MissLobang")
+d(F,"foodpanda (UOB)","S$12 off delivery, min. S$60 (also S$7 off min. S$40 with UOBNOV7)","UOBNOV12","Monthly code","https://www.foodpanda.sg/contents/uob-promotion",C+": code built from foodpanda's monthly pattern")
+d(F,"foodpanda (Citi)","S$12 off delivery, min. S$60 (also S$7 off min. S$40 with CITINOV7)","CITINOV12","Monthly code","https://www.foodpanda.sg/contents/citibank-promotion",C+": code built from foodpanda's monthly pattern")
+d(F,"foodpanda (DBS PayLah!)","S$3 off min. S$30 when paying with PayLah!","See DBS page","31 Dec 2026","https://www.dbs.com.sg/personal/promotion/paylah-foodpanda")
+d(F,"GrabFood (DBS/POSB)","S$4 off min. S$40, 1 use per month","DBSFOODSG","31 Dec 2026","https://www.posb.com.sg/personal/promotion/card-privileges-ylgrabfood")
+d(F,"GrabFood (DBS/POSB Mastercard)","S$5 off min. S$15","MCGRAB","31 Dec 2026","https://www.posb.com.sg/personal/promotion/card-privileges-ylgrabfood")
+d(F,"GrabFood (Maybank)","S$5 off min. S$35, 2 uses per month","MBNOV","30 Nov 2026","https://cardspromo.maybank2u.com.sg/promotions/grabfood",C+": code follows Maybank's MB+month pattern")
+d(F,"GrabFood","S$11 set meals from selected brands for 11.11","No code","11 Nov 2026","https://www.grab.com/sg/gf11meals/")
+R="Rides & transport"
+d(R,"Zig by ComfortDelGro","S$3 off rides to/from Mandai Wildlife Reserve (30 codes/weekday, 55/weekend day)","Code in Zig app","30 Nov 2026","https://zig.live/promotion/zigxmandai2026/")
+d(R,"TADA","20% off, capped at S$3","TADAWITHU","30 Nov 2026","https://sgdtips.com/tada/","Reported by SGDtips")
+d(R,"TADA","30% off rides on Friday 5pm–10pm","TADATIME","Not stated","https://sgdtips.com/tada/",C)
+d(R,"TADA","S$3 off rides to/from Jewel Changi Airport","TADAJEWEL","Not stated","https://sgdtips.com/tada/",C)
+d(R,"Grab (UOB KrisFlyer Credit Card)","S$15 off a ride to/from Changi Airport, 1 per half-year","KFUOBCC","31 Dec 2026","https://www.grab.com/sg/campaign/grab-promo-codes/")
+d(R,"Grab (HSBC)","S$3 off Saver Hitch/Share rides, min. S$15","HSBCGREEN","31 Dec 2026","https://www.grab.com/sg/campaign/grab-promo-codes/")
+d(R,"GrabExpress","20% off first delivery for new users, capped at S$3","WELCOME","31 Dec 2026","https://www.grab.com/sg/campaign/grab-promo-codes/")
+B="Banks & cards"
+d(B,"DBS/POSB x Shopee 11.11","S$60 off min. S$350 or S$22 off min. S$220 (vouchers); S$70 off S$600 on DBS IPP","Collect vouchers","17 Nov 2026","https://www.dbs.com.sg/personal/promotion/cards-privileges-shopeetc")
+d(B,"DBS/POSB x Shopee (new users)","S$15 off first Shopee purchase, no min. spend (PayLah!: DBSPLNEW2026)","DBSNEW2026","31 Dec 2026","https://www.dbs.com.sg/personal/promotion/cards-privileges-shopeetc")
+d(B,"Maybank x Shopee 11.11","S$17 off min. S$150 or S$45 off min. S$250, from 10 Nov 8pm","Collect vouchers","17 Nov 2026","https://cardspromo.maybank2u.com.sg/promotions/shopee-double-digit-sale")
+d(B,"HSBC Live+ (selected cardholders)","S$30 GrabGifts voucher for S$300 qualifying spend; first 1,000","Gift code ACC","15 Nov 2026","https://www.hsbc.com.sg/card-promotions/accelerate/")
+d(B,"OCBC 365 Credit Card","6% cashback on dining, groceries, transport and petrol with S$800 monthly spend, capped S$160","No code","From 1 Nov 2026","https://www.ocbc.com/group/media/release/2026/ocbc-card-6-percent-cashback-groceries-transport")
+d(B,"UOB Mastercard","KATSEYE Singapore concert presale tickets, 11–12 Nov","No code","12 Nov 2026","https://www.uob.com.sg/personal/promotions/cards/deals/index.page")
+d(B,"Standard Chartered e$aver","Up to 1.80% p.a. interest without lock-in","No code","30 Nov 2026","https://www.sc.com/sg/promotions/")
+T="Tech & electronics"
+d(T,"Shopee 11.11 Big Sale","S$11 brand boxes, up to 90% off brand flash sales, upsized vouchers up to 18% cashback","Collect in app","10 Nov 8pm – 17 Nov 2026","https://shopee.sg/m/1111")
+d(T,"Harvey Norman","11.11 Super Sales: 11% + 11% off selected items","No code","8–13 Nov 2026","https://www.harveynorman.com.sg/promotions-en/cart-promo-categories/11.11-super-sales-promotion/11.11-super-sales-11--11-off-8-13-nov/")
+d(T,"COURTS","Pre-11.11 Sale: deals from S$11, up to S$650 cashback","No code","2 Nov 2026","https://sg.everydayonsales.com/now-till-2-november-2026-courts-pre-11-11-sale-massive-savings-on-electronics-home-appliances-furniture-it-gadgets-from-just-11-plus-up-to-650-cashback/")
+d(T,"Lazada","11.11 flash sales; vouchers collected in app","Collect in app","11 Nov 2026","https://www.lazada.sg/flash-sale",C+": no public 11.11 code found")
+d(T,"Amazon.sg","Voucher Zone: platform, category, brand and bank vouchers applied at checkout","Clip voucher","Ongoing","https://www.amazon.sg/gp/help/customer/display.html?nodeId=TwIfQMIDMar9vdERHL")
+d(T,"The Tech Show (COMEX)","WOW deals from S$5, spend & redeem vouchers, cash rebates; free entry","No code","13–15 Nov 2026","https://www.comexitshow.com.sg/")
+DI="Dining"
+d(DI,"Sushi Express / Sushi Plus","1-for-1 daily featured sushi plate at S$2++, all outlets","No code","23 Nov 2026","https://sg.syioknya.com/promotion/36398-sushi-express-1-for-1-promotion-november-2026")
+d(DI,"Crossroads Buffet (DBS/POSB)","1-for-1 weekday lunch buffet; 50% off 2nd diner Fri–Sat dinner; book 3 days ahead","No code","30 Nov 2026","https://www.dbs.com.sg/personal/promotion/card-privileges-crossroadsbuffettact")
+d(DI,"Grab Dine Out","S$5 off first Dine Out payment, min. S$10 (new users)","DINEOUTNEW","31 Dec 2026","https://www.grab.com/sg/campaign/grab-promo-codes/")
+d(DI,"foodpanda pick-up (Citi)","S$5 off pick-up orders, min. S$30","CITINOVPU","Monthly code","https://www.foodpanda.sg/contents/citibank-promotion",C+": code built from foodpanda's monthly pattern")
+G="Groceries"
+d(G,"FairPrice","S$5 return voucher with every S$50 spend","No code","9 Nov 2026","https://www.allsingaporedeals.com/")
+d(G,"FairPrice","2-week promotions: up to 57% off instant noodles, local favourites and more","No code","11 Nov 2026","https://www.allsingaporedeals.com/")
+d(G,"Sheng Siong","Year-End Mega Promotion","No code","26 Nov 2026","https://corporate.shengsiong.com.sg/category/promotions/")
+d(G,"pandamart / foodpanda shops","Up to 40% off a different named grocery list each week","No code","29 Nov 2026","https://www.misslobang.com/article/foodpanda-6-off-lobang-code-nov-2026")
+FA="Fashion & retail"
+d(FA,"ZALORA","10% off for new customers, plus 30-day free returns (seen 30 Oct)","Shown at checkout","Not stated","https://www.shopback.sg/blog/fashion/zalora-deals-november-2026",C)
+d(FA,"Modparade","Warehaus Sale: past-season markdowns up to 80% off, Funan #02-21","No code","6–9 Nov 2026","https://www.modparade.com/product/warehaus-sale-2026-vip-ticket")
+d(FA,"Metro Paragon","Branded menswear & luggage sale, Level 4","No code","16 Nov 2026","https://sg.everydayonsales.com/warehouse-sale/")
+d(FA,"OSIM Great World","Display-set clearance up to 70% off","No code","9 Nov 2026","https://sg.everydayonsales.com/warehouse-sale/")
+TR="Travel"
+d(TR,"Singapore Airlines (DBS/POSB)","S$50 off return fares from Singapore; travel 10 Nov 2026 – 31 May 2027","DBS50OFF","Book 10–16 Nov 2026","https://www.singaporeair.com/en_UK/sg/plan-travel/local-promotions/offers/")
+d(TR,"Singapore Airlines (Citi Prestige)","S$60 off Economy (CITIPRESTIGE60) or S$120 off higher cabins (CITIPRESTIGE)","CITIPRESTIGE60","Book 17–23 Nov 2026","https://www.singaporeair.com/en_UK/sg/plan-travel/local-promotions/offers/")
+d(TR,"Singapore Airlines (HSBC)","S$60 off round trip, non-SEA destinations; travel Jan–Sep 2027","HSBCDEAL","Book 24–30 Nov 2026","https://www.hsbc.com.sg/card-promotions/travel-leisure/sia-promo/")
+K="Kids & toys"
+d(K,"Toys\"R\"Us (online)","11% off orders over S$60, max S$33 off","1111","12 Nov 2026","https://www.toysrus.com.sg/promotions/11.11/11.11-terms-and-conditions/")
+d(K,"Giant Toys & Household Fair","Toys from S$10, school shoes S$5, wagon trolleys S$15 at Jurong Perennial Business City","No code","8 Nov 2026","https://sg.everydayonsales.com/singapore-events/")
+d(K,"Family Fun Festival @ HOUZE sale","Kids' toys from S$0.30, archery sets S$6","No code","8 Nov 2026","https://sg.syioknya.com/promotion/36264-houze-warehouse-sale-biggest-sale-30-oct-8-nov-2026")
+d(K,"PastaMania","Kids' Christmas baking workshop from S$60 nett","No code","27 Nov – 19 Dec 2026","https://sg.everydayonsales.com/singapore-events/")
+S="Software & Tools"
+d(S,"Figma for Education","Free Professional plan for verified students & educators","Free","Ongoing","https://www.figma.com/education/")
+d(S,"Notion Education Plan","Free one-member workspace for university students & teachers","Free","Ongoing","https://www.notion.com/help/notion-for-education")
+d(S,"Canva","Canva Free for everyone; Canva Education free for K-12","Free","Ongoing","https://www.canva.com/education/students/")
+d(S,"GitHub Copilot Free","Free tier with an AI-credit allowance, auto model selection","Free","Ongoing","https://docs.github.com/en/copilot/get-started/plans")
+d(S,"GitHub Student Developer Pack","Copilot Student plus partner tools free for verified students","Free","Ongoing","https://education.github.com/pack")
+d(S,"Proton VPN Free","No ads, no logs, unlimited bandwidth, 1 device","Free","Ongoing","https://protonvpn.com/free-vpn")
+d(S,"Bitwarden Free","Unlimited passwords and devices, sync across devices","Free","Ongoing","https://bitwarden.com/help/password-manager-plans/")
+d(S,"AWS Activate","US$1,000 credits for self-funded startups; up to US$200k via providers","Apply","Ongoing","https://aws.amazon.com/startups/credits/")
+d(S,"Google for Startups Cloud","US$2,000 credits for pre-funded builders; more for funded startups","Apply","Ongoing","https://startup.google.com/cloud/")
+d(S,"Adobe Creative Cloud Pro (education)","US$19.99/month for the first year for eligible students & teachers","No code","Not stated","https://www.jobbers.io/freelance-tool-deals-discounts-page/",C+": third-party summary, US pricing")
+d(S,"Black Friday software (27 Nov)","2026 offers for Figma, Notion, Adobe and Canva not confirmed yet; tracker page","Watch","27–30 Nov 2026","https://blackfridaydeals.dev/blog/black-friday-saas-deals",C)
+BU="Business"
+d(BU,"DBS Business Multi-Currency (Starter)","Up to S$398: S$188 cash + up to S$180 card cashback + S$30 AI-spend cashback; first 200/month","Q42026","31 Dec 2026","https://www.dbs.com.sg/sme/day-to-day/accounts/dbs-business-multi-currency-account-starter-bundle")
+d(BU,"OCBC Business Account","S$128 for new businesses keeping S$8,888 avg. balance; up to S$100 FX-fee cashback","No code","31 Dec 2026","https://www.ocbc.com/iwov-resources/sg/ocbc/business/pdf/account-opening/terms-and-conditions-business-account-opening-campaign-oct-2026.pdf")
+d(BU,"EDGE Grant (Enterprise SG)","Up to 50% support for SMEs, S$100k/year cap; replaces PSG, EDG and MRA (ceased 29 Sep 2026)","Apply via BGP","Open since 30 Sep 2026","https://www.enterprisesg.gov.sg/resources/all-faqs/edge-grant")
+d(BU,"SkillsFuture Enterprise Credit","Current SFEC reported to expire 30 Nov 2026; fresh S$10,000 wallet from 1 Dec","Apply","30 Nov 2026","https://skillsfuture.gobusiness.gov.sg/support-and-programmes/funding/skillsfuture-enterprise-credit-sfec",C+": official page didn't load for us")
+d(BU,"Servcorp coworking","First month free on coworking, no deposit by credit card; hot desk from S$165/month","No code","Not stated","https://www.servcorp.com.sg/en/coworking/")
+d(BU,"The Working Capitol","First-timer WorkSpot hot desk at S$250+/month incl. S$50 meeting credits, 1 Keong Saik","No code","31 Dec 2026","https://www.theworkingcapitol.com/offer/welcome-to-workspot")
+
+E=[]
+def e(name,typ,start,end,dates,venue,fee,src):
+    E.append(dict(event=name,type=typ,start=start,end=end,dates=dates,venue=venue,fee=fee,source=src))
+e("Singapore Book Street (SingLit book fair)","Book fair","2026-11-02","2026-11-08","2–8 Nov","VivoCity L1 Central Court","Not stated","https://cnalifestyle.channelnewsasia.com/living/singapore-book-street-2026-vivocity-singlit-book-fair-590776")
+e("Modparade Warehaus Sale","Warehouse sale","2026-11-05","2026-11-09","5 Nov VIP, 6–9 Nov public","Funan #02-21","Free (VIP day S$5, offsets purchase)","https://www.modparade.com/product/warehaus-sale-2026-vip-ticket")
+e("HOUZE Warehouse Sale + Family Fun Festival","Warehouse sale","2026-10-30","2026-11-08","30 Oct – 8 Nov","Perennial Business City L1 Atrium","Not stated","https://sg.syioknya.com/promotion/36264-houze-warehouse-sale-biggest-sale-30-oct-8-nov-2026")
+e("Giant Toys and Household Fair","Toys & kids","2026-10-31","2026-11-08","31 Oct – 8 Nov","Jurong Perennial Business City","Not stated","https://sg.everydayonsales.com/singapore-events/")
+e("Mega Beauty Festival","Expo & fair","2026-11-06","2026-11-09","6–9 Nov","Singapore EXPO Hall 5B","Free","https://www.singaporeexpo.com.sg/events-at-expo/mega-beauty-festival/")
+e("Asia Pacific Food Expo","Expo & fair","2026-11-06","2026-11-09","6–9 Nov","Singapore EXPO Hall 4","Free","https://asiapacificfoodexpo.org.sg/")
+e("Me-You Market","Market & flea","2026-11-07","2026-11-08","7–8 Nov","Suntec Convention Centre Hall 403","Not stated","https://www.suntecsingapore.com/visit-events")
+e("The Christmas Atelier","Christmas market","2026-11-12","2026-11-14","12–14 Nov","Marina Bay Sands Convention Centre Hall C","Ticketed","https://eventshub.sg/guides/christmas-markets-singapore-2026-dates-venues-entry")
+e("The Tech Show 2026 (COMEX)","Tech show","2026-11-13","2026-11-15","13–15 Nov","Suntec Convention Centre L3–4","Free","https://www.comexitshow.com.sg/")
+e("Objectifs Junior Festival + Children's Market","Toys & kids","2026-11-14","2026-11-22","14–15 & 20–22 Nov","Objectifs, 155 Middle Road","Free (workshops ticketed)","https://www.objectifs.com.sg/objectifs-junior-festival-2026/")
+e("Singapore FinTech Festival","Business & B2B","2026-11-18","2026-11-20","18–20 Nov","Singapore EXPO Halls 1–6","Exhibition free with Trade Visitor Pass","https://www.fintechfestival.sg/festival-overview")
+e("Year-End Wine Warehouse Sale","Warehouse sale","2026-11-21","2026-11-21","21 Nov","Citilink Warehouse Complex, Pasir Panjang","RSVP","https://www.eventbrite.sg/e/year-end-wine-warehouse-sale-2026-tickets-2003949212038")
+e("MEGATEX by COURTS (IT & electronics)","Tech show","2026-11-27","2026-12-06","27–29 Nov & 4–6 Dec","Singapore EXPO Hall 6B","Free","https://www.singaporeexpo.com.sg/events-at-expo/megatex/")
+e("Christmas Together","Christmas market","2026-11-27","2026-11-29","27–29 Nov","Sands Expo & Convention Centre Hall F","Free (pre-register)","https://sustainablemarkets.sg/")
+e("Vintage Market (classic toys, retro games)","Market & flea","2026-11-27","2026-11-29","27–29 Nov","SAFRA Mount Faber Atrium","Free","https://www.safra.sg/whats-on/vintage-market-2026")
+e("Capitol Kempinski Christmas Market","Christmas market","2026-11-27","2026-12-27","27 Nov – 27 Dec","Capitol Singapore Open Plaza","Not stated","https://crafterssingapore.com/event/crafters-market-at-capitol-singapore/")
+e("Design Assembly Christmas Market","Christmas market","2026-12-02","2026-12-03","2–3 Dec","CHIJMES Hall","Not confirmed","https://eventshub.sg/guides/christmas-markets-singapore-2026-dates-venues-entry")
+e("IntraLogisteX Singapore","Business & B2B","2026-12-02","2026-12-03","2–3 Dec","Singapore EXPO","Not stated","https://www.singaporeexpo.com.sg/events-at-expo/")
+e("Asia TCM & Wellness Expo","Expo & fair","2026-12-04","2026-12-06","4–6 Dec","Singapore EXPO","Not stated","https://www.singaporeexpo.com.sg/events-at-expo/")
+e("Singapore Comic Con (toys, collectibles)","Toys & kids","2026-12-05","2026-12-06","5–6 Dec (preview 4 Dec)","Marina Bay Sands Expo","Ticketed","https://www.singaporecomiccon.com/aboutus")
+e("Doujin Market Mini","Market & flea","2026-12-12","2026-12-13","12–13 Dec","Suntec Convention Centre Hall 405","Not stated","https://www.suntecsingapore.com/visit-events")
+e("Twilight: Flea & Feast","Market & flea","2026-12-18","2026-12-20","18–20 Dec","Suntec Convention Centre Halls 401–403","Not stated","https://www.suntecsingapore.com/visit-events")
+for x in E:
+    if x["source"]=="https://www.singaporecomiccon.com/aboutus": x["fee"]="Not stated"
+json.dump(dict(asOf="1 Nov 2026",deals=D,events=E),open("data.json","w"),indent=1,ensure_ascii=False)
+open("data.js","w").write("window.PORTAL_DATA="+json.dumps(dict(asOf="1 Nov 2026",deals=D,events=E),ensure_ascii=False)+";\n")
+from collections import Counter
+print(len(D),Counter(x["category"] for x in D)); print(len(E),Counter(x["type"] for x in E))

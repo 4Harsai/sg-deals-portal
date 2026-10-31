@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Singapore Deals & Events</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <h1>Singapore Deals &amp; Events</h1>
+    <p class="sub">Promo codes, bank offers, free software, SME perks, expos, warehouse sales and toy fairs in one place.</p>
+    <p class="asof">Data as of <strong id="asof"></strong>. Every item links to its source. Items marked <span class="pill warn">check before use</span> need a quick check first.</p>
+    <nav class="tabs"><a href="#deals">Deals</a><a href="#events">Events &amp; sales</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <section id="deals">
+    <div class="sec-head"><h2>Deals &amp; promo codes</h2><span id="dealCount" class="count"></span></div>
+    <input id="search" type="search" placeholder="Search brand, offer or code (e.g. Grab, DBS, Figma)" aria-label="Search deals">
+    <div id="chips" class="chips" role="tablist"></div>
+    <div id="dealGrid" class="grid"></div>
+  </section>
+  <section id="events">
+    <div class="sec-head"><h2>Upcoming events &amp; sales</h2><span id="eventCount" class="count"></span></div>
+    <div id="typeChips" class="chips"></div>
+    <div id="eventList" class="events"></div>
+    <p class="muted">No public move-out sale listings could be verified yet.</p>
+  </section>
+</main>
+<footer class="wrap muted">Personal site. No ads, no affiliate links. Codes change often, so confirm on the source page before you pay.</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
