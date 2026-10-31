@@ -22,20 +22,20 @@
   {
    "category": "Food delivery",
    "brand": "foodpanda (UOB)",
-   "offer": "S$12 off delivery, min. S$60 (also S$7 off min. S$40 with UOBNOV7)",
-   "code": "UOBNOV12",
-   "valid": "Monthly code",
+   "offer": "S$12 off delivery, min. S$60 (also S$7 off min. S$40); 2 uses per user",
+   "code": "See source",
+   "valid": "Monthly",
    "source": "https://www.foodpanda.sg/contents/uob-promotion",
-   "note": "check before use: code built from foodpanda's monthly pattern"
+   "note": "Monthly code is shown on the source page; Citi/UOB card payment required"
   },
   {
    "category": "Food delivery",
    "brand": "foodpanda (Citi)",
-   "offer": "S$12 off delivery, min. S$60 (also S$7 off min. S$40 with CITINOV7)",
-   "code": "CITINOV12",
-   "valid": "Monthly code",
+   "offer": "S$12 off delivery, min. S$60 (also S$7 off min. S$40); 2 uses per user",
+   "code": "See source",
+   "valid": "Monthly",
    "source": "https://www.foodpanda.sg/contents/citibank-promotion",
-   "note": "check before use: code built from foodpanda's monthly pattern"
+   "note": "Monthly code is shown on the source page; Citi/UOB card payment required"
   },
   {
    "category": "Food delivery",
@@ -68,10 +68,10 @@
    "category": "Food delivery",
    "brand": "GrabFood (Maybank)",
    "offer": "S$5 off min. S$35, 2 uses per month",
-   "code": "MBNOV",
-   "valid": "30 Nov 2026",
+   "code": "See source",
+   "valid": "Monthly, while redemptions last",
    "source": "https://cardspromo.maybank2u.com.sg/promotions/grabfood",
-   "note": "check before use: code follows Maybank's MB+month pattern"
+   "note": "Monthly code is shown on the source page; Maybank card required"
   },
   {
    "category": "Food delivery",
@@ -293,10 +293,10 @@
    "category": "Dining",
    "brand": "foodpanda pick-up (Citi)",
    "offer": "S$5 off pick-up orders, min. S$30",
-   "code": "CITINOVPU",
-   "valid": "Monthly code",
+   "code": "See source",
+   "valid": "Monthly",
    "source": "https://www.foodpanda.sg/contents/citibank-promotion",
-   "note": "check before use: code built from foodpanda's monthly pattern"
+   "note": "Monthly code is shown on the source page; Citi/UOB card payment required"
   },
   {
    "category": "Groceries",

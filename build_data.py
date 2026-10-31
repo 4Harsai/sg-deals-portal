@@ -6,12 +6,12 @@ def d(cat,brand,offer,code,valid,src,note=""):
 F="Food delivery"
 d(F,"foodpanda","S$6 off selected restaurants, pick-up, pandamart & shops (min. spend varies)","LOBANG","29 Nov 2026","https://www.misslobang.com/article/foodpanda-6-off-lobang-code-nov-2026","Reported by MissLobang")
 d(F,"foodpanda (Visa)","S$8 off for Visa cards; limited vouchers drop daily 11am & 5pm; not stackable with LOBANG","VISA8OFF","29 Nov 2026","https://www.misslobang.com/article/foodpanda-6-off-lobang-code-nov-2026","Reported by MissLobang")
-d(F,"foodpanda (UOB)","S$12 off delivery, min. S$60 (also S$7 off min. S$40 with UOBNOV7)","UOBNOV12","Monthly code","https://www.foodpanda.sg/contents/uob-promotion",C+": code built from foodpanda's monthly pattern")
-d(F,"foodpanda (Citi)","S$12 off delivery, min. S$60 (also S$7 off min. S$40 with CITINOV7)","CITINOV12","Monthly code","https://www.foodpanda.sg/contents/citibank-promotion",C+": code built from foodpanda's monthly pattern")
+d(F,"foodpanda (UOB)","S$12 off delivery, min. S$60 (also S$7 off min. S$40); 2 uses per user","See source","Monthly","https://www.foodpanda.sg/contents/uob-promotion","Monthly code is shown on the source page; Citi/UOB card payment required")
+d(F,"foodpanda (Citi)","S$12 off delivery, min. S$60 (also S$7 off min. S$40); 2 uses per user","See source","Monthly","https://www.foodpanda.sg/contents/citibank-promotion","Monthly code is shown on the source page; Citi/UOB card payment required")
 d(F,"foodpanda (DBS PayLah!)","S$3 off min. S$30 when paying with PayLah!","See DBS page","31 Dec 2026","https://www.dbs.com.sg/personal/promotion/paylah-foodpanda")
 d(F,"GrabFood (DBS/POSB)","S$4 off min. S$40, 1 use per month","DBSFOODSG","31 Dec 2026","https://www.posb.com.sg/personal/promotion/card-privileges-ylgrabfood")
 d(F,"GrabFood (DBS/POSB Mastercard)","S$5 off min. S$15","MCGRAB","31 Dec 2026","https://www.posb.com.sg/personal/promotion/card-privileges-ylgrabfood")
-d(F,"GrabFood (Maybank)","S$5 off min. S$35, 2 uses per month","MBNOV","30 Nov 2026","https://cardspromo.maybank2u.com.sg/promotions/grabfood",C+": code follows Maybank's MB+month pattern")
+d(F,"GrabFood (Maybank)","S$5 off min. S$35, 2 uses per month","See source","Monthly, while redemptions last","https://cardspromo.maybank2u.com.sg/promotions/grabfood","Monthly code is shown on the source page; Maybank card required")
 d(F,"GrabFood","S$11 set meals from selected brands for 11.11","No code","11 Nov 2026","https://www.grab.com/sg/gf11meals/")
 R="Rides & transport"
 d(R,"Zig by ComfortDelGro","S$3 off rides to/from Mandai Wildlife Reserve (30 codes/weekday, 55/weekend day)","Code in Zig app","30 Nov 2026","https://zig.live/promotion/zigxmandai2026/")
@@ -40,7 +40,7 @@ DI="Dining"
 d(DI,"Sushi Express / Sushi Plus","1-for-1 daily featured sushi plate at S$2++, all outlets","No code","23 Nov 2026","https://sg.syioknya.com/promotion/36398-sushi-express-1-for-1-promotion-november-2026")
 d(DI,"Crossroads Buffet (DBS/POSB)","1-for-1 weekday lunch buffet; 50% off 2nd diner Fri–Sat dinner; book 3 days ahead","No code","30 Nov 2026","https://www.dbs.com.sg/personal/promotion/card-privileges-crossroadsbuffettact")
 d(DI,"Grab Dine Out","S$5 off first Dine Out payment, min. S$10 (new users)","DINEOUTNEW","31 Dec 2026","https://www.grab.com/sg/campaign/grab-promo-codes/")
-d(DI,"foodpanda pick-up (Citi)","S$5 off pick-up orders, min. S$30","CITINOVPU","Monthly code","https://www.foodpanda.sg/contents/citibank-promotion",C+": code built from foodpanda's monthly pattern")
+d(DI,"foodpanda pick-up (Citi)","S$5 off pick-up orders, min. S$30","See source","Monthly","https://www.foodpanda.sg/contents/citibank-promotion","Monthly code is shown on the source page; Citi/UOB card payment required")
 G="Groceries"
 d(G,"FairPrice","S$5 return voucher with every S$50 spend","No code","9 Nov 2026","https://www.allsingaporedeals.com/")
 d(G,"FairPrice","2-week promotions: up to 57% off instant noodles, local favourites and more","No code","11 Nov 2026","https://www.allsingaporedeals.com/")
